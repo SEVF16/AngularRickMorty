@@ -1,0 +1,39 @@
+<div>
+    <header class="sticky-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/GZ-logo.png " style ="width: 50%; border-radius: 6px; opacity: 0.85;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link fs-5 active" aria-current="page" routerLink="rick">Inicio</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-light" routerLink="home" >Sala</a></li> 
+                    <li><a class="dropdown-item text-light" routerLink="detail">Agregar Obra</a></li> 
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link fs-5" routerLink="home" >Sobre nosotros</a> </li>      
+                <li class="nav-item pr-5"><a class="nav-link fs-5" routerLink="personaje">Exponentes</a></li>
+              </ul>  
+              <div class="col text-end align-middle pt-3">
+                <a href="iniciar-sesion.html" class="btn btn-outline-light btn-sm my-1">Iniciar Sesion</a>
+                <a href="registro.html" class="btn btn-outline-success btn-sm my-1">Resgistrarse</a>
+                /
+                <a href="carrito.html" class="btn btn-sm my-1"><img src="img/carrito.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </nav>  
+    </header>  
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+  
+</div>
+

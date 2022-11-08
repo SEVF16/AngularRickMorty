@@ -1,0 +1,12 @@
+<div class="paises" >
+  <div  class="fila row mb-4" *ngFor="let pais of paises">
+    <div class="card pais " style="width: 18rem;">
+    <img class="card-img-top" [src]="pais.flags['png'] " alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">{{pais.translations['spa']['common'] }}</p>
+      <p class="card-text">{{pais.capital }}</p>
+    </div>
+    </div>
+  </div>
+</div>
+

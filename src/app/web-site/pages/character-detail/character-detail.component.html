@@ -1,0 +1,39 @@
+
+<main>
+    <div class="row  ms-2 me-2"*ngFor="let pj of arrPj">
+      <!--Bloque carrusel-->
+      <div class="col-12 col-md-6 col-lg-5 pt-5" id="marco-imagen">
+        <img [src]='pj.image' style ="width: 100%; border-radius: 6px; opacity: 0.85;">
+      </div>
+      <!--Bloque ficha técnica-->
+      <div class="col col-md col-lg mt-3 mt-md-0 mb-5 pt-2">
+        <div >
+          <div class=" text-black text-left ms-3">
+                <span class="fs-1">{{pj?.name}}</span>
+          </div>
+          <div class="card-body fs-4">
+            <div>
+              <table class="table table-bordered table-hover table-stripped">
+                <tbody>
+                  <tr>
+                      <td>Status:</td><td>{{pj?.status}}</td>
+                  </tr>
+                  <tr>
+                      <td>Fecha Creacion:</td><td>{{pj?.created | date}}</td>
+                  </tr>
+                  <tr>
+                      <td>Localidad:</td><td>{{pj?.location['name']}}</td>
+                  </tr>
+                  <tr>
+                      <td>Genero</td><td>{{pj?.gender}}</td>
+                  </tr>
+                  <tr>
+                      <td>Especie:</td><td>{{pj?.species}}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>    
+        </div>
+      </div>
+    </div>
+<main> 

@@ -1,0 +1,13 @@
+.paises{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fila{
+    margin: 5px;
+}
+.pais{
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
